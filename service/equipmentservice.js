@@ -1,9 +1,15 @@
 angular
-  .module('app')
-  .factory('equipmentService', equipmentService);
+    .module('app')
+    .factory('equipmentService', equipmentService);
 
-  equipmentService.$inject = ['$resource', 'API'];
+equipmentService.$inject = ['$resource', 'API'];
 
-  function equipmentService($resource, API) {
-    return $resource(API + 'equipment/:id');
-  }
+function equipmentService($resource, API) {
+    return $resource(API + 'equipment/:id', {
+        id: '@id'
+    }, {
+        'power': {
+            method: 'PUT'
+        }
+    });
+}

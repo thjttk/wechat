@@ -1,6 +1,6 @@
 <div class="row underline-row" ng-repeat="equipment in equipments">
   <a ng-href="#/{{equipment.type === 'AC' ? 'acController': 'lightController'}}/{{equipment.id}}">
-    <div class="equipmentdetailrow" ng-class="{'equipmentOffColor': equipment.AC_power_on_status === 0} ">
+    <div class="equipmentdetailrow" ng-class="{'equipmentOffColor': equipment.AC_power_on_status === 0 || equipment.light_power_on_status === 0} ">
       <div class="large">
         {{equipment.type}} - {{equipment.location}}
         <div class="small" ng-if="equipment.type==='AC'">

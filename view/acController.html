@@ -7,12 +7,12 @@
 
     <div class="controllerPanel">	    
     	<div class="acControlDisplay">
-	    	<span id = "mainscreen-digit">25</span>
+	    	<span id = "mainscreen-digit">{{equipment.temperature}}</span>
 			<span id = "centigrade-sign">℃</span>
 			<div class = "acController-mode-sign"></div>
 	    </div>
 	   	<div class="acControlDisplay">
-	   		<button type="button" class="acPowerControlbtn">
-	    		<img src="/Pic/Power-white.png">&nbsp;&nbsp;On&nbsp;&nbsp;</button>
+	   		<button type="button" class="acPowerControlbtn" ng-click="power()">
+	    		<img src="/Pic/Power-white.png">&nbsp;&nbsp;{{equipment.AC_power_on_status? "Off": "On"}}&nbsp;&nbsp;</button>
 	    </div>
 	</div>
