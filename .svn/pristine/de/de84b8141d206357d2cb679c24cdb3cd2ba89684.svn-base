@@ -1,0 +1,23 @@
+<span class="pull-left">
+    <a href='#/equipmentlist'><img id="addbtn" src="pic/Back-white.png"></a>
+  </span>
+  <h1 id="lightControlHeader"> {{equipment.type}} - {{equipment.location}}</h1>
+    <br/>
+    <br/>
+
+    <div class="controllerPanel">	    
+    	<div>
+	    	<button type="button" class="lightControllBtn" ng-click="PowerOnToogle(equipment)">
+	    		<span><img src="pic/Power-white.png"></span>&nbsp;&nbsp;On/Off&nbsp;&nbsp;</button>
+	    </div>
+	    <br/>
+	    <div>
+	    	<button type="button" class="lightControllBtn" ng-click="PowerOff5MinToogle(equipment)">
+	    		<span><img src="pic/Time-white.png"></span> 5 min Off</button>
+	    </div>
+	    <br/>
+	    <div>
+	    	<button type="button" class="lightControllBtn" ng-click="PowerOff10MinToogle(equipment)">
+	    		<span><img src="pic/Time-white.png"></span> 10 min Off</button>
+	    </div>
+	</div>

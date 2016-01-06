@@ -1,0 +1,15 @@
+<div class="row underline-row" ng-repeat="equipment in equipments">
+    <a ng-href="#/{{equipment.type === '空调' ? 'acController': 'lightController'}}/{{equipment.id}}">
+        <div class="equipmentdetailrow" ng-class="{'equipmentOffColor': equipment.power === false} ">
+            <div class="large">
+                {{equipment.type}} - {{equipment.location}}
+                <div class="small">
+                    <p>电源：{{equipment.power ? '开': '关'}}</p>
+                    <p ng-show="equipment.temperature">温度：{{equipment.temperature}} ℃ <img src='pic/Temp-sun-small.png' ng-show="equipment.heating"><img src='pic/Temp-snow-small.png' ng-show="!equipment.heating"></p>
+                    <p ng-show="equipment.moisture">湿度：{{equipment.moisture}} </p>
+                    <p ng-show="equipment.wind">风力：{{equipment.wind}} </p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>

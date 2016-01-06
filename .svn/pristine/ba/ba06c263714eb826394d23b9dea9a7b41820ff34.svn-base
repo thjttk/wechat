@@ -1,0 +1,347 @@
+body {
+	min-width: 400px;
+	padding: 20px 0;
+	position: relative;
+	font:20px "Microsoft YaHei", Verdana, Geneva, sans-serif;
+}
+
+body.equipment-list-page{
+	background-color: #71C687;
+}
+
+body.temperature-heat-page{
+	background-color: #FF9640;
+}
+
+body.temperature-cool-page{
+	background-color: #6CC6E5;
+}
+
+body.humidity-page{
+	background-color: #00688B;
+}
+
+body.statistic-page{
+	background-color: #F26B5E;
+}
+
+body.config-page{
+	background-color: #F2F2F2;
+}
+
+.footer {
+	margin-bottom: 20px;
+	left: 0;
+}
+.footer .col-xs-3 {
+	text-align: center;
+}
+
+img.Navi-config-page{
+	background: no-repeat url(pic/Navi-control-grey.png);
+	-webkit-background-size: contain;
+	src: none;
+}
+
+img.Navi-ac-page{
+	background: no-repeat url(pic/Navi-house-grey.png);
+	src: none;
+}
+
+img.Navi-chart-page{
+	background: no-repeat url(pic/Navi-chart-grey.png);
+	src: none;
+}
+
+img.Navi-set-page{
+	background: no-repeat url(pic/Navi-set-grey.png);
+	src: none;
+}
+
+
+h1{
+  font-size: 25;
+  display: inline-block;
+}
+
+.edit-device-btn {
+	background: no-repeat url(pic/Deviceedit-grey.png);
+}
+
+#addbtn{
+	margin-top: 20px;
+}
+
+.logoutbtn{
+
+}
+
+.row.underline-row{
+	border-bottom: 1px solid #ddd;
+	padding:5px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 90%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+}
+
+.footer .row img{
+	padding-top: 3px;
+}
+
+.equipmentDetailRow{
+	padding-left: 20px;
+}
+
+#equipmentAddbtn{
+	position: relative;
+	width: 350px; 
+	height: 100px;
+	left:50%;
+	margin-left: -175px;
+	margin-top: 50px;
+	background-color: transparent;
+	border: 1px solid #000000;
+	border-radius:8px;/*边框圆角*/
+}
+
+#equipmentAddInput{
+	background-color: :transparent;
+}
+
+
+.large {
+    font-size:30px;
+    color:white;
+    /*padding:10px 0;*/
+}
+
+.medium {
+    font-size:20px;
+    color:black;
+    padding-top:5px;
+}
+
+.small {
+    font-size:15px;
+    color:white;
+    padding-top:5px;
+}
+
+
+td {
+    text-align:center;
+}
+
+hr{
+    border-width:1px;
+    -webkit-margin-before:0;
+    -webkit-margin-after:0;
+}
+
+div.equipmentOffColor{
+	background-color: #b3b3b3;
+}
+
+p{
+	margin : 5;
+}
+
+div{
+	position:relative; 
+}
+
+.wrap{ 
+	position: relative;
+	z-index: 10;
+	height:400px; 
+	margin:10px; 
+	top: 160px;
+	background-image: url("pic/Frontpage-backimage.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center 20%;
+	
+} 
+
+.all-middle{ 
+	z-index: 10;
+	width:250px; 
+	height:200px; 
+	top:27%; 
+	left:47%; 
+	margin:-60px 0 0 -100px; 
+	text-align: center;
+	position: relative;
+}
+
+#mainscreen-digit{
+	left: 0;
+	font-size: 108px; 
+	color: #FFF;
+	text-indent: -20px;
+	position: relative;
+}
+
+.up-temp-btn{
+	position: relative;
+	z-index: 20;
+	height:100px;
+	width: 100px;
+	left: 50%;
+	margin-left: -50px;
+	top:-270px;
+	background-image: url("pic/Temp-sun-plus.png");
+}
+
+.down-temp-btn{
+	position: relative;
+	z-index: 20;
+	height:100px; 
+	width: 101px;
+	left: 50%;
+	top: -70px; 
+	margin-left: -50px;
+	background-image: url("pic/Temp-sun-minus.png");
+
+}
+
+.up-snow-btn{
+	position: relative;
+	z-index: 20;
+	height:100px;
+	width: 100px;
+	left: 50%;
+	margin-left: -50px;
+	top:-270px;
+	background-image: url("pic/Temp-snow-plus.png");
+}
+
+.down-snow-btn{
+	position: relative;
+	z-index: 20;
+	height:100px; 
+	width: 101px;
+	left: 50%;
+	top: -70px; 
+	margin-left: -50px;
+	background-image: url("pic/Temp-snow-minus.png");
+
+}
+
+#centigrade-sign{
+	font-size: 38px; 
+	color: #FFF;
+	text-indent: -20px;
+	position: relative;
+	bottom: 50px;
+}
+
+.mode-sign{
+	position: absolute;
+	z-index: 20;
+	height:35px; 
+	width: 35px;
+	background-image: url("pic/Temp-sun-big.png");
+	display: inline-block;
+	left: 180px;
+	top: 80px;
+}
+
+.acController-mode-sign{
+	position: absolute;
+	z-index: 20;
+	height:35px; 
+	width: 35px;
+	background-image: url("pic/Temp-sun-big.png");
+	display: inline-block;
+	left: 140px;
+	top: 80px;
+}
+
+.trending-sign{
+	position: absolute;
+	z-index: 20;
+	height:20px; 
+	width: 20px;
+	background-image: url("pic/Arrow-up.png");
+	display: inline-block;
+	left: 220px;
+	top: 88px;
+}
+
+.switch-to-humidity-btn{
+	position: absolute;
+	z-index: 20;
+	height:21px; 
+	width: 12px;
+	background-image: url("pic/Forward-white.png");
+	display: inline-block;
+	left: 262px;
+	top: 65px;
+}
+
+.switch-to-temperature-btn{
+	position: absolute;
+	z-index: 20;
+	height:21px; 
+	width: 12px;
+	background-image: url("pic/Back-white.png");
+	display: inline-block;
+	left: -48px;
+	top: 65px;	
+}
+
+
+.controllerPanel{
+	position: relative;
+
+}
+
+.lightControllBtn{
+	width: 300px; 
+	height: 120px;
+	left:50%;
+	margin-left: -150px;
+	position: relative;
+	background-color: transparent;
+	border: 1px solid #FFFFFF;
+	border-radius:8px;/*边框圆角*/
+	color: white;
+	-webkit-tap-highlight-color:#71C687;  
+    -webkit-user-select:none;
+
+}
+
+.lightControllBtn:active, .lightControllBtn:focus{  
+    background-color: #71C687;
+}  
+
+#lightControlHeader{
+	color: white;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+.acPowerControlBtn{
+	width: 70px; 
+	height: 100px;
+	position: relative;
+	background-color: transparent;
+	border: 1px solid #FFFFFF;
+	border-radius:8px;/*边框圆角*/
+	color: white;
+}
+
+.acControlDisplay{
+	display: inline-block;
+	margin-top: 5%
+}
+
+a:link,a:visited,a:hover{
+ text-decoration:none;  /*超链接无下划线*/
+}
