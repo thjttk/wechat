@@ -15,16 +15,16 @@
  <footer class="footer" ng-class="{'temperature-heat-page': global.curPage === 1, 'config-page': global.curPage === 4, 'equipment-list-page':global.curPage === 2, 'statistic-page':global.curPage === 3, 'humidity-page':global.curPage ===2.5} ">
       <div class="row">
         <div class="col-xs-3">
-          <a href="#/temperature"><img ng-class="{'Navi-config-page': global.curPage === 1}" src='pic/Navi-control-white.png'/></a>
+          <a href="#/temperature"><div class="temperature" ng-class="{'Navi-config-page': global.curPage === 1}"></div></a>
         </div>
         <div class="col-xs-3">
-          <a href="#/equipmentlist"><img ng-class="{'Navi-ac-page': global.curPage === 2}" src='pic/Navi-house-white.png'/></a>
+          <a href="#/equipmentlist"><div class="equipments" ng-class="{'Navi-ac-page': global.curPage === 2}"></div></a>
         </div>
         <div class="col-xs-3">
-          <a href="#/statistic"><img ng-class="{'Navi-chart-page': global.curPage === 3}" src='pic/Navi-chart-white.png'/></a>
+          <a href="#/statistic"><div class="statistics" ng-class="{'Navi-chart-page': global.curPage === 3}"></div></a>
         </div>
         <div class="col-xs-3">
-          <a href="#/config"><img ng-class="{'Navi-set-page': global.curPage === 4}" src='pic/Navi-set-white.png'/></a>
+          <a href="#/config"><div class="config" ng-class="{'Navi-set-page': global.curPage === 4}"></div></a>
         <div>
       </div>
 </footer>

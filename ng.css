@@ -26,37 +26,44 @@ body {
 }
 
 .config-page {
-    background-color: #F2F2F2;
-}
-
-.footer {
-    padding-bottom: 20px;
-    left: 0;
+    background-color: #ccc;
 }
 
 .footer .col-xs-3 {
     text-align: center;
 }
+.footer a div {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+footer .row div.temperature{
+	background: no-repeat url(pic/Navi-control-white.png);
+}
+footer .row div.equipments {
+	background: no-repeat url(pic/Navi-house-white.png);
+}
+footer .row div.statistics {
+	background: no-repeat url(pic/Navi-chart-white.png);
+}
+footer .row div.config {
+	background: no-repeat url(pic/Navi-set-white.png);
+}
 
-img.Navi-config-page {
+footer .row div.Navi-config-page {
     background: no-repeat url(pic/Navi-control-white-solid.png);
-    -webkit-background-size: contain;
-    src: none;
 }
 
-img.Navi-ac-page {
+footer .row div.Navi-ac-page {
     background: no-repeat url(pic/Navi-house-white-solid.png);
-    src: none;
 }
 
-img.Navi-chart-page {
+footer .row div.Navi-chart-page {
     background: no-repeat url(pic/Navi-chart-white-solid.png);
-    src: none;
 }
 
-img.Navi-set-page {
-    background: no-repeat url(pic/Navi-set-white-solid.png);
-    src: none;
+footer .row div.Navi-set-page {
+    background: no-repeat url(pic/Navi-set-grey.png);
 }
 
 h1 {
