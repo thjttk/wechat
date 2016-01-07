@@ -1,6 +1,6 @@
 body {
 	min-width: 400px;
-	padding: 20px 0;
+	padding-bottom: 50px;
 	position: relative;
 	font:20px "Microsoft YaHei", Verdana, Geneva, sans-serif;
 }
@@ -344,4 +344,17 @@ div{
 
 a:link,a:visited,a:hover{
  text-decoration:none;  /*超链接无下划线*/
+}
+
+/*chart*/
+.temperature-chart, .humidity-chart {
+	width: 450px;
+	height: 500px;
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 20px auto;
+}
+canvas {
+	margin-top: 20px;
 }
