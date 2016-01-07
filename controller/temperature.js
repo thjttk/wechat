@@ -1,21 +1,13 @@
 angular.module('app')
   .controller('temperatureCtrl', temperatureCtrl);
 
-temperatureCtrl.$inject = ['$scope']
+temperatureCtrl.$inject = ['$scope', 'sensorService']
 
-function temperatureCtrl($scope) {
+function temperatureCtrl($scope, sensorService) {
   $scope.global.curPage = 1;
-  $scope.temp_value = 25;
-
-  $scope.addTemp = function(temp_value)
-  {
-  	$scope.temp_value = temp_value + 1;
-  	
-  	console.log($scope.temp_value);
-  }
-
-  $scope.minusTemp = function(temp_value){
-  	$scope.temp_value = temp_value - 1;
-  	console.log($scope.temp_value);
-  }
+  
+  sensorService.query(function(data) {
+    $scope.currentTemperature = data[0].latest_temperature;
+    console.log( $scope.currentTemperature );
+  })
 }

@@ -1,22 +1,13 @@
 angular.module('app')
   .controller('humidityCtrl', humidityCtrl);
 
-humidityCtrl.$inject = ['$scope']
+humidityCtrl.$inject = ['$scope', 'sensorService']
 
-function humidityCtrl($scope) {
+function humidityCtrl($scope, sensorService) {
   $scope.global.curPage = 2.5;
-  $scope.humidityValue = 60;
-
-  $scope.addHumidity = function(humidityValue)
-  {
-  	$scope.humidityValue = humidityValue + 1;
-  	
-  	console.log($scope.humidityValue);
-  }
-
-  $scope.minusHumidity = function(humidityValue){
-  	$scope.humidityValue = humidityValue - 1;
-  	console.log($scope.humidityValue);
-  }
+  sensorService.query(function(data) {
+    $scope.currentHumidity = data[0].latest_humidity;
+    console.log( $scope.currentHumidity );
+  })
 
  }

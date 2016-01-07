@@ -8,11 +8,11 @@
 
 
 </head>
-<body ng-app="app" ng-controller="appCtrl" class="container" ng-class="{'temperature-heat-page': global.curPage === 1, 'config-page': global.curPage === 4, 'equipment-list-page':global.curPage === 2, 'statistic-page':global.curPage === 3, 'humidity-page':global.curPage ===2.5} ">
+<body ng-app="app" ng-controller="appCtrl" class="container-fluid" ng-class="{'temperature-heat-page': global.curPage === 1, 'config-page': global.curPage === 4, 'equipment-list-page':global.curPage === 2, 'statistic-page':global.curPage === 3, 'humidity-page':global.curPage ===2.5} ">
 
   <ng-view></ng-view>
 
- <footer class="footer">
+ <footer class="footer" ng-class="{'temperature-heat-page': global.curPage === 1, 'config-page': global.curPage === 4, 'equipment-list-page':global.curPage === 2, 'statistic-page':global.curPage === 3, 'humidity-page':global.curPage ===2.5} ">
       <div class="row">
         <div class="col-xs-3">
           <a href="#/temperature"><img ng-class="{'Navi-config-page': global.curPage === 1}" src='pic/Navi-control-white.png'/></a>
