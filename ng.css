@@ -1,13 +1,14 @@
 body {
-    min-width: 400px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     position: relative;
     font: 20px "Microsoft YaHei", Verdana, Geneva, sans-serif;
 }
 
-body, footer {
-	transition: .5s all;
+body,
+footer {
+    transition: .5s all;
 }
+
 .equipment-list-page {
     background-color: #71C687;
 }
@@ -35,22 +36,27 @@ body, footer {
 .footer .col-xs-3 {
     text-align: center;
 }
+
 .footer a div {
-	display: inline-block;
-	width: 40px;
-	height: 40px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
 }
-footer .row div.temperature{
-	background: no-repeat url(pic/Navi-control-white.png);
+
+footer .row div.temperature {
+    background: no-repeat url(pic/Navi-control-white.png);
 }
+
 footer .row div.equipments {
-	background: no-repeat url(pic/Navi-house-white.png);
+    background: no-repeat url(pic/Navi-house-white.png);
 }
+
 footer .row div.statistics {
-	background: no-repeat url(pic/Navi-chart-white.png);
+    background: no-repeat url(pic/Navi-chart-white.png);
 }
+
 footer .row div.config {
-	background: no-repeat url(pic/Navi-set-white.png);
+    background: no-repeat url(pic/Navi-set-white.png);
 }
 
 footer .row div.Navi-config-page {
@@ -150,16 +156,13 @@ hr {
     -webkit-margin-after: 0;
 }
 
-div.equipmentOffColor .large, div.equipmentOffColor .small {
+div.equipmentOffColor .large,
+div.equipmentOffColor .small {
     color: gray;
 }
 
 p {
     margin: 5;
-}
-
-div {
-    position: relative;
 }
 
 .wrap {
@@ -169,6 +172,7 @@ div {
     margin: 10px;
     top: 50px;
     background-image: url("pic/Frontpage-backimage.png");
+    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center 20%;
@@ -195,25 +199,25 @@ div {
 }
 
 .up-temp-btn {
-    position: relative;
+    position: absolute;
     z-index: 20;
     height: 100px;
     width: 100px;
     left: 50%;
-    margin-left: -50px;
-    top: -380px;
+    top: -20px;
     background-image: url("pic/Temp-sun-plus.png");
+    transform: translateX(-50%);
 }
 
 .down-temp-btn {
-    position: relative;
+    position: absolute;
     z-index: 20;
     height: 100px;
-    width: 101px;
+    width: 100px;
     left: 50%;
-    top: -180px;
-    margin-left: -50px;
+    bottom: 20px;
     background-image: url("pic/Temp-sun-minus.png");
+    transform: translateX(-50%);
 }
 
 .up-snow-btn {
@@ -267,9 +271,11 @@ div {
     display: inline-block;
     right: 35px;
 }
+
 .acController-mode-sign.cooling {
     background: url("pic/Humidity.png") no-repeat;
 }
+
 .trending-sign {
     position: absolute;
     z-index: 20;
@@ -279,9 +285,11 @@ div {
     left: 220px;
     top: 88px;
 }
+
 .trending-sign.up {
     background-image: url("pic/Arrow-up.png");
 }
+
 .trending-sign.down {
     background-image: url("pic/Arrow-down.png");
 }
@@ -293,8 +301,8 @@ div {
     width: 12px;
     background-image: url("pic/Forward-white.png");
     display: inline-block;
-    right: -36px;
-    top: 65px;
+    right: -30px;
+    top: 60px;
 }
 
 .switch-to-temperature-btn {
@@ -304,8 +312,8 @@ div {
     width: 12px;
     background-image: url("pic/Back-white.png");
     display: inline-block;
-    left: -37px;
-    top: 65px;
+    left: -32px;
+    top: 60px;
 }
 
 .controllerPanel {
@@ -368,7 +376,6 @@ a:hover {
 
 .temperature-chart,
 .humidity-chart {
-
     border: 2px solid white;
     border-radius: 10px;
     padding: 20px;
@@ -378,37 +385,43 @@ a:hover {
 canvas {
     margin-top: 20px;
 }
+
+
 /*override loading bar*/
+
 #loading-bar .bar {
-	background: red;
+    background: red;
 }
 
 .container.middle {
     width: 100%;
-	min-width: 440px;
-	margin: auto;
+    min-width: 440px;
+    margin: auto;
 }
+
 .ac-remote-control {
-	margin-top: 50px;
-	padding: 10px;
-	width: 93px;
-	height: 238px;
-	background: url("pic/AC-button.png") no-repeat;
+    margin-top: 50px;
+    padding: 10px;
+    width: 93px;
+    height: 238px;
+    background: url("pic/AC-button.png") no-repeat;
 }
+
 .ac-remote-control button {
-	background: transparent;
-	width: 70px;
-	height: 100px;
-	margin-bottom: 18px;
-	border: 0;
+    background: transparent;
+    width: 70px;
+    height: 100px;
+    margin-bottom: 18px;
+    border: 0;
 }
 
 .ac-btn-group {
-	margin-top: 50px;
-	height: 240px;
-	width: 93px;
-	/*border: 1px solid;*/
+    margin-top: 50px;
+    height: 240px;
+    width: 93px;
+    /*border: 1px solid;*/
 }
+
 .ac-btn-group button {
     width: 120px;
     height: 52px;
@@ -418,29 +431,44 @@ canvas {
     color: white;
     margin-bottom: 10px;
 }
+
 .ac-btn-group .mode {
     background: url("pic/Temp-sun.png") no-repeat;
     background-position: 90%;
 }
+
 .ac-btn-group .mode.cooling {
     background: url("pic/Humidity.png") no-repeat;
     background-position: 90%;
 }
+
 .ac-btn-group .wind-speed {
     background: url("pic/Wind-speed.png") no-repeat;
     background-position: 90%;
 }
+
 .ac-btn-group .wind-direction {
     background: url("pic/Wind-direction.png") no-repeat;
     background-position: 90%;
 }
+
 .ac-btn-group .timing {
     background: url("pic/Time-white.png") no-repeat;
     background-position: 90%;
 }
+
 button:active {
     border: 2px solid white;
 }
+
 line-chart {
     display: block;
+}
+
+footer a {
+    display: block;
+}
+
+footer {
+    background: transparent;
 }

@@ -1,4 +1,5 @@
 <div class="wrap">
+    <div class="up-temp-btn" ng-click="changeTemp(true)"></div>
     <div class="all-middle">
         <span id="mainscreen-digit">{{currentTemperature || '??'}}</span>
         <span id="centigrade-sign">℃</span>
@@ -8,6 +9,5 @@
             <div class="switch-to-humidity-btn"></div>
         </a>
     </div>
+    <div class="down-temp-btn" ng-click="changeTemp(false)"></div>
 </div>
-<div class="up-temp-btn" ng-click="changeTemp(true)"></div>
-<div class="down-temp-btn" ng-click="changeTemp(false)"></div>
