@@ -368,8 +368,7 @@ a:hover {
 
 .temperature-chart,
 .humidity-chart {
-    width: 450px;
-    height: 500px;
+
     border: 2px solid white;
     border-radius: 10px;
     padding: 20px;
@@ -441,4 +440,7 @@ canvas {
 }
 button:active {
     border: 2px solid white;
+}
+line-chart {
+    display: block;
 }
