@@ -4,12 +4,12 @@
 <h1 id="lightControlHeader"> {{equipment.type}} - {{equipment.location}}</h1>
 <div class="container middle">
     <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-8">
             <span id="mainscreen-digit">{{equipment.temperature || '??'}}</span>
             <span id="centigrade-sign">℃</span>
             <div class="acController-mode-sign" ng-class="{'cooling': !equipment.heating}"></div>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-4">
             <button type="button" class="acPowerControlbtn" ng-click="power()">
                 <img src="pic/Power-white.png">&nbsp;&nbsp;{{equipment.AC_power_on_status? "Off": "On"}}&nbsp;&nbsp;</button>
         </div>

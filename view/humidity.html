@@ -1,12 +1,13 @@
-<div class = "wrap"  >
-	<div class = "all-middle">
-			<span id = "mainscreen-digit">{{currentHumidity || '??'}}</span>
-			<span id = "centigrade-sign">%</span>
-			<div class = "mode-sign"></div>
-			<div class = "trending-sign" ng-class="{'up': trend===1, 'down': trend===-1}"></div>
-			<a href = #/temperature><div class = "switch-to-temperature-btn"></div></a>
-	</div>
+<div class="wrap">
+    <div class="up-snow-btn" ng-click="changeHumidity(true)"></div>
+    <div class="all-middle">
+        <span id="mainscreen-digit">{{currentHumidity || '??'}}</span>
+        <span id="centigrade-sign">%</span>
+        <div class="mode-sign"></div>
+        <div class="trending-sign" ng-class="{'up': trend===1, 'down': trend===-1}"></div>
+        <a href='#/temperature'>
+            <div class="switch-to-temperature-btn"></div>
+        </a>
+    </div>
+    <div class="down-snow-btn" ng-click="changeHumidity(false)"></div>
 </div>
-
-<div class = "up-snow-btn" ng-click = "changeHumidity(true)"></div>
-<div class = "down-snow-btn" ng-click = "changeHumidity(false)"></div>

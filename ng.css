@@ -91,7 +91,6 @@ h1 {
 .logoutbtn {}
 
 .row.underline-row {
-    border-bottom: 1px solid #ddd;
     padding: 5px;
 }
 
@@ -104,7 +103,7 @@ h1 {
 }
 
 .footer .row img {
-    padding-top: 3px;
+    padding: 5px;
 }
 
 .equipmentDetailRow {
@@ -189,13 +188,9 @@ p {
 }
 
 #mainscreen-digit {
-    left: 0;
     font-size: 108px;
     color: #FFF;
-    text-indent: -20px;
-    position: relative;
     display: inline-block;
-    margin-right: 20px;
 }
 
 .up-temp-btn {
@@ -221,34 +216,34 @@ p {
 }
 
 .up-snow-btn {
-    position: relative;
+    position: absolute;
     z-index: 20;
     height: 100px;
     width: 100px;
     left: 50%;
-    margin-left: -50px;
-    top: -380px;
+    top: -20px;
     background-image: url("pic/Temp-snow-plus.png");
+    transform: translateX(-50%);
 }
 
 .down-snow-btn {
-    position: relative;
+    position: absolute;
     z-index: 20;
     height: 100px;
-    width: 101px;
+    width: 100px;
     left: 50%;
-    top: -180px;
-    margin-left: -50px;
+    bottom: 20px;
     background-image: url("pic/Temp-snow-minus.png");
+    transform: translateX(-50%);
 }
 
 #centigrade-sign {
     font-size: 38px;
     color: #FFF;
     text-indent: -20px;
-    position: relative;
-    bottom: 50px;
-    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20%;
 }
 
 .mode-sign {
@@ -263,17 +258,17 @@ p {
 }
 
 .acController-mode-sign {
-    position: relative;
-    z-index: 20;
+    position: absolute;
     height: 35px;
     width: 35px;
     background-image: url("pic/Temp-sun-big.png");
-    display: inline-block;
-    right: 35px;
+    right: 18%;
+    bottom: 18%;
 }
 
 .acController-mode-sign.cooling {
     background: url("pic/Humidity.png") no-repeat;
+    background-position: 12px;
 }
 
 .trending-sign {
@@ -348,15 +343,14 @@ p {
 
 .acPowerControlBtn {
     width: 70px;
-    height: 100px;
+    height: 90px;
     position: relative;
     background-color: transparent;
     border: 1px solid #FFFFFF;
     border-radius: 8px;
-    /*边框圆角*/
     color: white;
     margin-top: 30px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .acControlDisplay {
@@ -395,7 +389,6 @@ canvas {
 
 .container.middle {
     width: 100%;
-    min-width: 440px;
     margin: auto;
 }
 
