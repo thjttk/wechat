@@ -191,6 +191,8 @@ p {
     font-size: 108px;
     color: #FFF;
     display: inline-block;
+    position: relative;
+    left: -20px;
 }
 
 .up-temp-btn {
@@ -237,13 +239,22 @@ p {
     transform: translateX(-50%);
 }
 
-#centigrade-sign {
+#ac-centigrade-sign {
     font-size: 38px;
     color: #FFF;
     text-indent: -20px;
     position: absolute;
     top: 20px;
     right: 20%;
+}
+
+#centigrade-sign {
+    font-size: 38px;
+    color: #FFF;
+    text-indent: -20px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
 }
 
 .mode-sign {
@@ -253,8 +264,8 @@ p {
     width: 35px;
     background-image: url("pic/Temp-sun-big.png");
     display: inline-block;
-    left: 180px;
-    top: 80px;
+    right: 30px;
+    bottom: 85px;
 }
 
 .acController-mode-sign {
