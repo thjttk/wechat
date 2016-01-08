@@ -167,7 +167,7 @@ div {
     z-index: 10;
     height: 400px;
     margin: 10px;
-    top: 160px;
+    top: 50px;
     background-image: url("pic/Frontpage-backimage.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -201,7 +201,7 @@ div {
     width: 100px;
     left: 50%;
     margin-left: -50px;
-    top: -270px;
+    top: -380px;
     background-image: url("pic/Temp-sun-plus.png");
 }
 
@@ -211,7 +211,7 @@ div {
     height: 100px;
     width: 101px;
     left: 50%;
-    top: -70px;
+    top: -180px;
     margin-left: -50px;
     background-image: url("pic/Temp-sun-minus.png");
 }
@@ -223,7 +223,7 @@ div {
     width: 100px;
     left: 50%;
     margin-left: -50px;
-    top: -270px;
+    top: -380px;
     background-image: url("pic/Temp-snow-plus.png");
 }
 
@@ -233,7 +233,7 @@ div {
     height: 100px;
     width: 101px;
     left: 50%;
-    top: -70px;
+    top: -180px;
     margin-left: -50px;
     background-image: url("pic/Temp-snow-minus.png");
 }
