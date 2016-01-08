@@ -3,11 +3,11 @@
         <span id="mainscreen-digit">{{currentTemperature || '??'}}</span>
         <span id="centigrade-sign">℃</span>
         <div class="mode-sign"></div>
-        <div class="trending-sign"></div>
+        <div class="trending-sign" ng-class="{'up': trend===1, 'down': trend===-1}"></div>
         <a href="#/humidity">
             <div class="switch-to-humidity-btn"></div>
         </a>
     </div>
 </div>
-<div class="up-temp-btn" ng-click="addTemp(temp_value)"></div>
-<div class="down-temp-btn" ng-click="minusTemp(temp_value)"></div>
+<div class="up-temp-btn" ng-click="changeTemp(true)"></div>
+<div class="down-temp-btn" ng-click="changeTemp(false)"></div>

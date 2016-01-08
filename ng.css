@@ -5,6 +5,9 @@ body {
     font: 20px "Microsoft YaHei", Verdana, Geneva, sans-serif;
 }
 
+body, footer {
+	transition: .5s all;
+}
 .equipment-list-page {
     background-color: #71C687;
 }
@@ -147,8 +150,8 @@ hr {
     -webkit-margin-after: 0;
 }
 
-div.equipmentOffColor {
-    background-color: #b3b3b3;
+div.equipmentOffColor .large, div.equipmentOffColor .small {
+    color: gray;
 }
 
 p {
@@ -187,6 +190,8 @@ div {
     color: #FFF;
     text-indent: -20px;
     position: relative;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .up-temp-btn {
@@ -239,6 +244,7 @@ div {
     text-indent: -20px;
     position: relative;
     bottom: 50px;
+    display: inline-block;
 }
 
 .mode-sign {
@@ -253,25 +259,31 @@ div {
 }
 
 .acController-mode-sign {
-    position: absolute;
+    position: relative;
     z-index: 20;
     height: 35px;
     width: 35px;
     background-image: url("pic/Temp-sun-big.png");
     display: inline-block;
-    left: 140px;
-    top: 80px;
+    right: 35px;
 }
-
+.acController-mode-sign.cooling {
+    background: url("pic/Humidity.png") no-repeat;
+}
 .trending-sign {
     position: absolute;
     z-index: 20;
     height: 20px;
     width: 20px;
-    background-image: url("pic/Arrow-up.png");
     display: inline-block;
     left: 220px;
     top: 88px;
+}
+.trending-sign.up {
+    background-image: url("pic/Arrow-up.png");
+}
+.trending-sign.down {
+    background-image: url("pic/Arrow-down.png");
 }
 
 .switch-to-humidity-btn {
@@ -335,6 +347,8 @@ div {
     border-radius: 8px;
     /*边框圆角*/
     color: white;
+    margin-top: 30px;
+    margin-left: 50px;
 }
 
 .acControlDisplay {
@@ -364,4 +378,67 @@ a:hover {
 
 canvas {
     margin-top: 20px;
+}
+/*override loading bar*/
+#loading-bar .bar {
+	background: red;
+}
+
+.container.middle {
+    width: 100%;
+	min-width: 440px;
+	margin: auto;
+}
+.ac-remote-control {
+	margin-top: 50px;
+	padding: 10px;
+	width: 93px;
+	height: 238px;
+	background: url("pic/AC-button.png") no-repeat;
+}
+.ac-remote-control button {
+	background: transparent;
+	width: 70px;
+	height: 100px;
+	margin-bottom: 18px;
+	border: 0;
+}
+
+.ac-btn-group {
+	margin-top: 50px;
+	height: 240px;
+	width: 93px;
+	/*border: 1px solid;*/
+}
+.ac-btn-group button {
+    width: 120px;
+    height: 52px;
+    border-radius: 4px;
+    border: 1px solid white;
+    text-align: left;
+    color: white;
+    margin-bottom: 10px;
+}
+.ac-btn-group .mode {
+    background: url("pic/Temp-sun.png") no-repeat;
+    background-position: 90%;
+}
+.ac-btn-group .mode.cooling {
+    background: url("pic/Humidity.png") no-repeat;
+    background-position: 90%;
+}
+.ac-btn-group .wind-speed {
+    background: url("pic/wind-speed.png") no-repeat;
+    background-position: 90%;
+}
+.ac-btn-group .wind-direction {
+    background: url("pic/Wind-direction.png") no-repeat;
+    background-position: 90%;
+}
+.ac-btn-group .timing {
+    background: url("pic/Time-white.png") no-repeat;
+    background-position: 90%;
+}
+button:active {
+    border: 2px solid white;
 }

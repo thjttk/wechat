@@ -8,7 +8,7 @@ function equipmentService($resource, API) {
     return $resource(API + 'equipment/:id', {
         id: '@id'
     }, {
-        'power': {
+        'update': {
             method: 'PUT'
         }
     });
