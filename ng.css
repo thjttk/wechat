@@ -209,6 +209,8 @@ p {
     top: -20px;
     background-image: url("pic/Temp-sun-plus.png");
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
 }
 
 .down-temp-btn {
@@ -220,6 +222,8 @@ p {
     bottom: 20px;
     background-image: url("pic/Temp-sun-minus.png");
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
 }
 
 .up-snow-btn {
@@ -231,6 +235,8 @@ p {
     top: -20px;
     background-image: url("pic/Temp-snow-plus.png");
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
 }
 
 .down-snow-btn {
@@ -242,6 +248,8 @@ p {
     bottom: 20px;
     background-image: url("pic/Temp-snow-minus.png");
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
 }
 
 #ac-centigrade-sign {
