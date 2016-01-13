@@ -1,23 +1,22 @@
-   <span class="pull-left">
+<span class="pull-left">
     <a href='#/config'><img id="addbtn" src="pic/Back-darkgrey.png"></a>
-  </span>
-  <h1>  添加设备</h1>
-
-    <div class="row underline-row">
-    	<div class="col-xs-3">类型:</div>
-    	<div class="col-xs-9">
-          <select name="equipment"> 
-          <option value="ac">空调</option> 
-          <option value="light">电灯</option>
-          </select> 
-      </div>
+</span>
+<h1>Add Equipment</h1>
+<div class="row underline-row">
+    <div class="col-xs-3">Type:</div>
+    <div class="col-xs-9">
+        <select name="equipment" ng-model="type">
+            <option value="AC">AC</option>
+            <option value="light">light</option>
+        </select>
     </div>
- 
- 	<div class="row underline-row">
-    	<div class="col-xs-3">位置:</div>
-    	<div class="col-xs-9"><input class="equipmentAddInput"></input></div>
+</div>
+<div class="row underline-row">
+    <div class="col-xs-3">Location:</div>
+    <div class="col-xs-9">
+        <input ng-model="location">
     </div>
-
-    <div>
-    	<button type="button" id="equipmentAddbtn">添加</button>
-    </div>
+</div>
+<div class="row underline-row">
+    <button class="col-xs-10 col-xs-offset-1" id="equipmentAddbtn" ng-click="add()">Add</button>
+</div>

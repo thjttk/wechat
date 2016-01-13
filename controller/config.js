@@ -8,5 +8,12 @@ function configCtrl($scope, equipmentService) {
 
   $scope.equipments = equipmentService.query();
 
+  $scope.delete = function(equipment) {
+  	equipment.$delete(function() {
+  		var index = $scope.equipments.indexOf(equipment);
+  		$scope.equipments.splice(index, 1);
+  	});
+  }
+
   
 }

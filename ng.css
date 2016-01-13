@@ -29,8 +29,7 @@ footer {
 }
 
 .config-page {
-    background-color: #4d4d4d;
-    color: #ddd;
+    background-color: #ddd;
 }
 
 .footer .col-xs-3 {
@@ -111,16 +110,12 @@ h1 {
 }
 
 #equipmentAddbtn {
-    position: relative;
-    width: 350px;
     height: 100px;
-    left: 50%;
-    margin-left: -175px;
-    margin-top: 50px;
-    background-color: transparent;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    /*边框圆角*/
+    background: transparent;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 1.5em;
+
 }
 
 #equipmentAddInput {

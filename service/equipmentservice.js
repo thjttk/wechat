@@ -10,6 +10,9 @@ function equipmentService($resource, API) {
     }, {
         'update': {
             method: 'PUT'
-        }
+        },
+    	'create': {
+    		method: 'POST'
+    	}
     });
 }

@@ -1,8 +1,22 @@
 angular.module('app')
-  .controller('equipmentAddCtrl', equipmentAddCtrl);
+    .controller('equipmentAddCtrl', equipmentAddCtrl);
 
-equipmentAddCtrl.$inject = ['$scope']
+equipmentAddCtrl.$inject = ['$scope', 'equipmentService', '$location']
 
-function equipmentAddCtrl($scope) {
-  $scope.global.curPage = 4;
- }
+function equipmentAddCtrl($scope, equipmentService, $location) {
+    $scope.global.curPage = 4;
+    $scope.type = "AC";
+    $scope.add = function() {
+        console.log($scope.location);
+        if (!$scope.location || $scope.location.trim().length === 0) {
+            alert('provide location')
+            return;
+        }
+        equipmentService.create({
+            type: $scope.type,
+            location: $scope.location
+        }, function() {
+            $location.path('/config')
+        });
+    }
+}
