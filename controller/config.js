@@ -15,5 +15,11 @@ function configCtrl($scope, equipmentService) {
   	});
   }
 
+  $scope.openAirkiss = function() {
+  	wx.invoke('configWXDeviceWiFi', {}, function(res) {
+  		alert(JSON.stringify(res))
+  	})
+  }
+
   
 }
