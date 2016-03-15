@@ -12,7 +12,8 @@ module.exports = function(grunt) {
     connect: {
       server: {
           options: {
-              port: 80,
+	      open: true,
+              port: 8080,
               base: '',
               // default:false, the server will shutdown after the task finishes
               // if a watch task is started later, it is not necessary to overide this default value

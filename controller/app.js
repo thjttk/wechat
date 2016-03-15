@@ -51,5 +51,6 @@ function route($routeProvider) {
     .when('/config', {
       templateUrl: 'view/config.html',
       controller: 'configCtrl'
-    });
+    })
+    .otherwise('/temperature');
 }

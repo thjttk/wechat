@@ -9,7 +9,7 @@ function equipmentAddCtrl($scope, equipmentService, $location) {
     $scope.add = function() {
         console.log($scope.location);
         if (!$scope.location || $scope.location.trim().length === 0) {
-            alert('provide location')
+            alert('need description')
             return;
         }
         equipmentService.create({
