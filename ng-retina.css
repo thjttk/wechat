@@ -1,0 +1,191 @@
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+    footer .row div {
+        background-size: 40px 40px;
+    }
+    footer .row div.temperature {
+        background-image: url(picx2/Navi-house-white.png);
+    }
+
+    footer .row div.equipments {
+        background-image: url(picx2/Navi-control-white.png);
+        background-repeat: no-repeat;
+    }
+
+    footer .row div.statistics {
+        background-image: url(picx2/Navi-chart-white.png);
+        background-repeat: no-repeat;
+    }
+
+    footer .row div.config {
+        background-image: url(picx2/Navi-set-white.png);
+        background-repeat: no-repeat;
+    }
+
+    footer .row div.Navi-config-page {
+        background-image: url(picx2/Navi-house-white-solid.png);
+        background-repeat: no-repeat;
+    }
+
+    footer .row div.Navi-ac-page {
+        background-image: url(picx2/Navi-control-white-solid.png);
+        background-repeat: no-repeat;
+    }
+
+    footer .row div.Navi-chart-page {
+        background-image: url(picx2/Navi-chart-white-solid.png);
+        background-repeat: no-repeat;
+    }
+
+    footer .row div.Navi-set-page {
+        background-image: url(picx2/Navi-set-grey.png);
+        background-repeat: no-repeat;
+    }
+
+    .edit-device-btn {
+        background-image: url(picx2/Deviceedit-grey.png);
+    }
+
+    .up-temp-btn {
+        background-image: url("picx2/Temp-sun-plus.png");
+        background-size: 100px 100px;
+    }
+
+    .down-temp-btn {
+        background-image: url("picx2/Temp-sun-minus.png");
+        background-size: 100px 100px;
+    }
+
+    .up-snow-btn {
+        background-image: url("picx2/Temp-snow-plus.png");
+        background-size: 100px 100px;
+    }
+
+    .down-snow-btn {
+        background-image: url("picx2/Temp-snow-minus.png");
+        background-size: 100px 100px;
+    }
+
+    .mode-sign {
+        background-image: url("picx2/Temp-sun-big.png");
+        background-size: 35px 35px;
+    }
+
+    .acController-mode-sign {
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        background-image: url("picx2/Temp-sun-big.png");
+        right: 18%;
+        bottom: 18%;
+    }
+
+    .acController-mode-sign.cooling {
+        background: url("picx2/Humidity.png") no-repeat;
+        background-size: 25px 35px;
+    }
+
+    .trending-sign.up {
+        background-image: url("picx2/Arrow-up.png");
+        background-size: 20px 20px;
+    }
+
+    .trending-sign.down {
+        background-image: url("picx2/Arrow-down.png");
+        background-size: 20px 20px;
+    }
+
+    .switch-to-humidity-btn {
+        background-image: url("picx2/Forward-white.png");
+        background-size: 12px 21px;
+    }
+
+    .switch-to-temperature-btn {
+        background-image: url("picx2/Back-white.png");
+        background-size: 12px 21px;
+    }
+
+    .ac-remote-control {
+        background-image: url("picx2/AC-button.png");
+        background-repeat: no-repeat;
+        background-size: 93px 238px;
+    }
+
+    .ac-btn-group .mode {
+        background: url("picx2/Temp-sun.png");
+        background-repeat: no-repeat;
+        background-position: 90%;
+        background-size: 30px 30px;
+    }
+
+    .ac-btn-group .mode.cooling {
+        background: url("picx2/Humidity.png");
+        background-repeat: no-repeat;
+        background-position: 90%;
+        background-size: 25px 35px;
+    }
+
+    .ac-btn-group .wind-speed {
+        background: url("picx2/Wind-speed.png");
+        background-repeat: no-repeat;
+        background-position: 90%;
+        background-size: 40px 20px;
+    }
+
+    .ac-btn-group .wind-direction {
+        background: url("picx2/Wind-direction.png");
+        background-repeat: no-repeat;
+        background-position: 90%;
+        background-size: 30px 30px;
+    }
+
+    .ac-btn-group .timing {
+        background: url("picx2/Time-white.png");
+        background-repeat: no-repeat;
+        background-position: 90%;
+        background-size: 30px 30px;
+    }
+
+    .wrap {
+        background-image: url("picx2/Frontpage-backimage.png");
+        background-size: 320px 320px;
+    }
+
+    .lightControllBtn.now {
+        background-image: url(picx2/Power-white.png);
+        background-position: 38% 50%;
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+    }
+    .lightControllBtn.five {
+        background-image: url(picx2/Time-white.png);
+        background-position: 27% 50%;
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+    }
+
+    .acPowerControlBtn {
+        background-image: url(picx2/Power-white.png);
+        background-repeat: no-repeat;
+        background-position: 50% 20%;
+        background-size: 25px 25px;
+    }
+
+    .temperature-chart {
+        background-image: url(picx2/Temp-sun-big.png);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 5px 5px;
+    }
+     .humidity-chart {
+        background-image: url(picx2/Humidity.png);
+        background-repeat: no-repeat;
+        background-size: 20px 28px;
+        background-position: 5px 5px;
+    }
+
+
+}

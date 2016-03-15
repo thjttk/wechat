@@ -43,35 +43,43 @@ footer {
 }
 
 footer .row div.temperature {
-    background: no-repeat url(pic/Navi-control-white.png);
+    background-image: url(pic/Navi-house-white.png);
+    background-repeat: no-repeat;
 }
 
 footer .row div.equipments {
-    background: no-repeat url(pic/Navi-house-white.png);
+    background-image: url(pic/Navi-control-white.png);
+    background-repeat: no-repeat;
 }
 
 footer .row div.statistics {
-    background: no-repeat url(pic/Navi-chart-white.png);
+    background-image: url(pic/Navi-chart-white.png);
+    background-repeat: no-repeat;
 }
 
 footer .row div.config {
-    background: no-repeat url(pic/Navi-set-white.png);
+    background-image: url(pic/Navi-set-white.png);
+    background-repeat: no-repeat;
 }
 
 footer .row div.Navi-config-page {
-    background: no-repeat url(pic/Navi-control-white-solid.png);
+    background-image: url(pic/Navi-control-white-solid.png);
+    background-repeat: no-repeat;
 }
 
 footer .row div.Navi-ac-page {
-    background: no-repeat url(pic/Navi-house-white-solid.png);
+    background-image: url(pic/Navi-house-white-solid.png);
+    background-repeat: no-repeat;
 }
 
 footer .row div.Navi-chart-page {
-    background: no-repeat url(pic/Navi-chart-white-solid.png);
+    background-image: url(pic/Navi-chart-white-solid.png);
+    background-repeat: no-repeat;
 }
 
 footer .row div.Navi-set-page {
-    background: no-repeat url(pic/Navi-set-grey.png);
+    background-image: url(pic/Navi-set-grey.png);
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -80,7 +88,8 @@ h1 {
 }
 
 .edit-device-btn {
-    background: no-repeat url(pic/Deviceedit-grey.png);
+    background-image: url(pic/Deviceedit-grey.png);
+    background-repeat: no-repeat;
 }
 
 #addbtn {
@@ -369,7 +378,10 @@ p {
     border-radius: 8px;
     color: white;
     margin-top: 30px;
-    /* margin-left: 50px; */
+    background-image: url(pic/Power-white.png);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: 25px 25px;
 }
 
 .acControlDisplay {
@@ -393,6 +405,18 @@ a:hover {
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
+}
+.temperature-chart {
+    background-image: url(pic/Temp-sun-big.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 5px 5px;
+}
+ .humidity-chart {
+    background-image: url(pic/Humidity.png);
+    background-repeat: no-repeat;
+    background-size: 20px 28px;
+    background-position: 5px 5px;
 }
 
 canvas {
@@ -483,4 +507,20 @@ footer a {
 
 footer {
     background: transparent;
+}
+
+.lightControllBtn {
+    font-size: 1.5em;
+}
+.lightControllBtn.now {
+    background-image: url(pic/Power-white.png);
+    background-position: 38% 50%;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+.lightControllBtn.five {
+    background-image: url(pic/Time-white.png);
+    background-position: 27% 50%;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
 }

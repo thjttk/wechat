@@ -6,17 +6,20 @@
 <br/>
 <div class="controllerPanel">
   <div>
-    <button type="button" class="lightControllBtn" ng-click="power()">
-      <span><img src="pic/Power-white.png"></span>&nbsp;&nbsp;{{equipment.light_power_on_status? 'Off': 'On'}}&nbsp;&nbsp;</button>
+    <button type="button" class="lightControllBtn now" ng-click="power()">
+      {{equipment.light_power_on_status? 'Off': 'On'}}
+    </button>
   </div>
   <br/>
   <div>
-    <button type="button" class="lightControllBtn" ng-click="power(5)">
-      <span><img src="pic/Time-white.png"></span> 5 min {{equipment.light_power_on_status? 'Off': 'On'}}</button>
+    <button type="button" class="lightControllBtn five" ng-click="power(5)">
+      5 min {{equipment.light_power_on_status? 'Off': 'On'}}
+    </button>
   </div>
   <br/>
   <div>
-    <button type="button" class="lightControllBtn" ng-click="power(10)">
-      <span><img src="pic/Time-white.png"></span> 10 min {{equipment.light_power_on_status? 'Off': 'On'}}</button>
+    <button type="button" class="lightControllBtn five" ng-click="power(10)">
+      10 min {{equipment.light_power_on_status? 'Off': 'On'}}
+    </button>
   </div>
 </div>
