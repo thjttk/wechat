@@ -2,7 +2,7 @@ angular.module('app', ['ngRoute', 'ngTouch', 'ngResource', 'ngAnimate', 'angular
   .controller('appCtrl', appCtrl)
   .config(route)
   .config(loading)
-  .constant('API', 'http://182.254.211.15/poc3.0_demo/');
+  .constant('API', 'http://139.196.202.91:8003/isteward/');
 
 
 appCtrl.$inject = ['$scope']
