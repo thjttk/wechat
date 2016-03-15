@@ -187,5 +187,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
         background-position: 5px 5px;
     }
 
-
+    .add-remote {
+        background-image: url(picx2/Deviceadd-darkgrey.png);
+    }
+    .equipmentDetailRow {
+        background-image: url("picx2/Forward-white.png");
+    }
 }

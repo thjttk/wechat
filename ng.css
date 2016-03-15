@@ -100,6 +100,7 @@ h1 {
 
 .row.underline-row {
     padding: 5px;
+    /*border-bottom: 1px white solid;*/
 }
 
 .footer {
@@ -116,14 +117,20 @@ h1 {
 
 .equipmentDetailRow {
     padding-left: 20px;
+    padding-bottom: 10px;
+    background-image: url("pic/Forward-white.png");
+    background-repeat: no-repeat;
+    background-size: 12px 21px;
+    background-position: 96%;
 }
 
 #equipmentAddbtn {
-    height: 100px;
+    height: 60px;
     background: transparent;
     border: 1px solid;
     border-radius: 4px;
     font-size: 1.5em;
+    margin-top: 20px;
 
 }
 
@@ -523,4 +530,32 @@ footer {
     background-position: 27% 50%;
     background-repeat: no-repeat;
     background-size: 25px 25px;
+}
+
+.add-remote {
+    background-image: url(pic/Deviceadd-darkgrey.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    color: white;
+}
+.col-xs-3.labels {
+    font-size: 1.5em;
+    color: white;
+}
+col-xs-3.pull-right select {
+    margin-top: 10px;
+}
+#remote-add-btn {
+    border: 1px solid white;
+    border-radius: 4px;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
 }

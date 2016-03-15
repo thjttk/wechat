@@ -67,5 +67,10 @@ function route($routeProvider) {
       templateUrl: 'view/config.html',
       controller: 'configCtrl'
     })
+    .when('/remoteAdd', {
+      title: 'Remote Control',
+      templateUrl: 'view/remoteAdd.html',
+      controller: 'remoteAddCtrl'
+    })
     .otherwise('/temperature');
 }

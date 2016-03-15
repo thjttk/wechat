@@ -1,10 +1,10 @@
 angular.module('app')
-    .controller('equipmentAddCtrl', equipmentAddCtrl);
+    .controller('remoteAddCtrl', remoteAddCtrl);
 
-equipmentAddCtrl.$inject = ['$scope', 'equipmentService', '$location']
+remoteAddCtrl.$inject = ['$scope', 'equipmentService', '$location']
 
-function equipmentAddCtrl($scope, equipmentService, $location) {
-    $scope.global.curPage = 4;
+function remoteAddCtrl($scope, equipmentService, $location) {
+    $scope.global.curPage = 2;
     $scope.type = "AC";
     $scope.add = function() {
         console.log($scope.location);
