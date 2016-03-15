@@ -1,7 +1,7 @@
-<html>
+<html ng-app="app" ng-controller="appCtrl">
 
 <head>
-    <title>iSteward</title>
+    <title>{{title || iSteward}}</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="vendor/bootstrap.css">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="ng-retina.css">
 </head>
 
-<body ng-app="app" ng-controller="appCtrl" class="container" ng-class="{'temperature-heat-page': global.curPage === 1, 'config-page': global.curPage === 4, 'equipment-list-page':global.curPage === 2, 'statistic-page':global.curPage === 3, 'humidity-page':global.curPage ===2.5} ">
+<body class="container" ng-class="{'temperature-heat-page': global.curPage === 1, 'config-page': global.curPage === 4, 'equipment-list-page':global.curPage === 2, 'statistic-page':global.curPage === 3, 'humidity-page':global.curPage ===2.5} ">
     <ng-view></ng-view>
     <footer class="footer">
         <div class="row">
