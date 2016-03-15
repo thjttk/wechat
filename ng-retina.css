@@ -3,26 +3,27 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min-device-pixel-ratio: 1.5) {
 
-    footer .row div {
-        background-size: 40px 40px;
-    }
     footer .row div.temperature {
         background-image: url(picx2/Navi-house-white.png);
+        background-size: 42px 40px; 
     }
 
     footer .row div.equipments {
         background-image: url(picx2/Navi-control-white.png);
         background-repeat: no-repeat;
+        background-size: 40px 40px; 
     }
 
     footer .row div.statistics {
         background-image: url(picx2/Navi-chart-white.png);
         background-repeat: no-repeat;
+        background-size: 39px 37px; 
     }
 
     footer .row div.config {
         background-image: url(picx2/Navi-set-white.png);
         background-repeat: no-repeat;
+        background-size: 39px 40px; 
     }
 
     footer .row div.Navi-config-page {
