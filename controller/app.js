@@ -1,7 +1,6 @@
-angular.module('app', ['ngRoute', 'ngTouch', 'ngResource', 'ngAnimate', 'angular-loading-bar'])
+angular.module('app', ['ngRoute', 'ngTouch', 'ngResource'])
   .controller('appCtrl', appCtrl)
   .config(route)
-  .config(loading)
   .run(changeTitle)
   .constant('API', 'http://139.196.202.91:8003/isteward/');
 
@@ -17,11 +16,6 @@ function appCtrl($scope) {
   $scope.global = {
     curPage: 1
   };
-}
-
-loading.$inject = ['cfpLoadingBarProvider'];
-function loading(cfpLoadingBarProvider) {
-  cfpLoadingBarProvider.includeSpinner = false;
 }
 
 route.$inject = ['$routeProvider'];

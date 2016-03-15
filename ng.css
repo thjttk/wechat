@@ -5,7 +5,7 @@ body {
 
 body,
 footer {
-    transition: .5s all;
+    transition: .5s background-color;
 }
 
 .equipment-list-page {
