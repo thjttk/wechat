@@ -588,3 +588,32 @@ col-xs-3.pull-right select {
     margin-right: 20px;
     cursor: pointer;
 }
+
+.fanSpeedControlBtn {
+    width: 70px;
+    height: 90px;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    color: white;
+    margin-top: 30px;
+    background-image: url(pic/Power-white.png);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: 25px 25px;
+}
+.natureControlBtn {
+    width: 70px;
+    height: 90px;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    color: white;
+    margin-top: 30px;
+    background-image: url(pic/Power-white.png);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: 25px 25px;
+}

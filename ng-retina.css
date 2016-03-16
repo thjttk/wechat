@@ -209,4 +209,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
         background-image: url(picx2/Temp-snow-minus-tap.png);
     }
 
+    .fanSpeedControlBtn {
+        background-image: url();
+    }
+
 }

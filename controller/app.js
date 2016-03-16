@@ -51,6 +51,11 @@ function route($routeProvider) {
       templateUrl: 'view/lightController.html',
       controller: 'lightControllerCtrl'
     })
+    .when('/fanController/:fanID', {
+      title: 'Remote Control',
+      templateUrl: 'view/fanController.html',
+      controller: 'fanControllerCtrl'
+    })
     .when('/equipmentAdd', {
       title: 'Settings',
       templateUrl: 'view/equipmentAdd.html',
