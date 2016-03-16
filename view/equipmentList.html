@@ -1,9 +1,9 @@
 <div class="row underline-row" ng-repeat="equipment in equipments" ng-class="{'equipmentOffColor': equipment.AC_power_on_status === 0 || equipment.light_power_on_status === 0} ">
-  <a ng-href="#/{{equipment.type === 'AC' ? 'acController': 'lightController'}}/{{equipment.id}}">
+  <a ng-href="#/{{equipment.type === 'ac' ? 'acController': 'lightController'}}/{{equipment.id}}">
     <div class="equipmentdetailrow">
       <div class="large">
         {{equipment.type}} - {{equipment.location}}
-        <div class="small" ng-if="equipment.type==='AC'">
+        <div class="small" ng-if="equipment.type==='ac'">
           <p>Power：{{equipment.AC_power_on_status ? 'On': 'Off'}}</p>
           <p ng-show="equipment.temperature">Temperature：{{equipment.temperature}} ℃ <img src='pic/Temp-sun-small.png' ng-show="equipment.heating"><img src='pic/Temp-snow-small.png' ng-show="!equipment.heating"></p>
           <p ng-show="equipment.humidity">Humidity：{{equipment.humidity}} </p>

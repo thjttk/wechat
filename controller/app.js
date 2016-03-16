@@ -66,7 +66,7 @@ function route($routeProvider) {
       templateUrl: 'view/remoteAdd.html',
       controller: 'remoteAddCtrl'
     })
-    .when('/remoteEdit', {
+    .when('/remoteEdit/:id', {
       title: 'Remote Control',
       templateUrl: 'view/remoteEdit.html',
       controller: 'remoteEditCtrl'
