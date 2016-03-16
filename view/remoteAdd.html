@@ -1,20 +1,22 @@
-<span class="pull-left">
-    <a href='#/equipmentlist'><img id="addbtn" src="picx2/Back-white.png" width="12" height="21"></a>
+<a href='#/equipmentlist'>
+  <img id="addbtn" src="picx2/Back-white.png" width="12" height="21">
+  <span class="pull-left">
   </span>
+</a>
 <h1 id="lightControlHeader">Add Remote</h1>
 <div class="row underline-row">
-    <div class="col-xs-3 labels">Type:</div>
-        <select name="equipment" ng-model="type" class="col-xs-3 pull-right">
-            <option value="AC">AC</option>
-            <option value="light">light</option>
-        </select>
+  <div class="col-xs-3 labels">Type:</div>
+  <select name="equipment" ng-model="type" class="col-xs-3 pull-right">
+    <option value="AC">AC</option>
+    <option value="light">light</option>
+  </select>
 </div>
 <hr>
 <div class="row underline-row">
-    <div class="col-xs-3 labels">Description:</div>
-    <input ng-model="location" class="col-xs-3 pull-right">
+  <div class="col-xs-3 labels">Description:</div>
+  <input ng-model="location" class="col-xs-3 pull-right">
 </div>
 <hr>
 <div class="row underline-row">
-    <button class="col-xs-8 col-xs-offset-2" id="remote-add-btn" ng-click="add()">Add</button>
+  <button class="col-xs-8 col-xs-offset-2" id="remote-add-btn" ng-click="add()">Add</button>
 </div>

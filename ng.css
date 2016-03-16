@@ -223,6 +223,9 @@ p {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+.up-temp-btn:active {
+    background-image: url(pic/Temp-sun-plus-tap.png);
+}
 
 .down-temp-btn {
     position: absolute;
@@ -235,6 +238,10 @@ p {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+
+.down-temp-btn:active {
+    background-image: url(pic/Temp-sun-minus-tap.png);
 }
 
 .up-snow-btn {
@@ -250,6 +257,10 @@ p {
     transform: translateX(-50%);
 }
 
+.up-snow-btn:active {
+    background-image: url(pic/Temp-snow-plus-tap.png);
+}
+
 .down-snow-btn {
     position: absolute;
     z-index: 20;
@@ -262,7 +273,9 @@ p {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-
+.down-snow-btn:active {
+    background-image: url(pic/Temp-snow-minus-tap.png);
+}
 #ac-centigrade-sign {
     font-size: 38px;
     color: #FFF;
@@ -447,8 +460,13 @@ canvas {
     padding: 10px;
     width: 93px;
     height: 238px;
-    background: url("pic/AC-button.png") no-repeat;
+    background-image: url("pic/AC-button.png");
+    background-repeat: no-repeat;
 }
+
+/*.ac-remote-control:active {
+    background-image: url(pic/AC-button-tap.png);
+}*/
 
 .ac-remote-control button {
     background: transparent;

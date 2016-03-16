@@ -5,7 +5,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
     footer .row div.temperature {
         background-image: url(picx2/Navi-house-white.png);
-        background-size: 42px 40px; 
+        background-size: 42px 37px; 
     }
 
     footer .row div.equipments {
@@ -17,13 +17,13 @@ only screen and (min-device-pixel-ratio: 1.5) {
     footer .row div.statistics {
         background-image: url(picx2/Navi-chart-white.png);
         background-repeat: no-repeat;
-        background-size: 39px 37px; 
+        background-size: 40px 34px; 
     }
 
     footer .row div.config {
         background-image: url(picx2/Navi-set-white.png);
         background-repeat: no-repeat;
-        background-size: 39px 40px; 
+        background-size: 35px 35px; 
     }
 
     footer .row div.Navi-config-page {
@@ -192,6 +192,21 @@ only screen and (min-device-pixel-ratio: 1.5) {
         background-image: url(picx2/Deviceadd-darkgrey.png);
     }
     .equipmentDetailRow {
-        background-image: url("picx2/Forward-white.png");
+        background-image: url(picx2/Forward-white.png);
     }
+
+    .up-temp-btn:active {
+        background-image: url(picx2/Temp-sun-plus-tap.png);
+    }
+
+    .down-temp-btn:active {
+        background-image: url(picx2/Temp-sun-minus-tap.png);
+    }
+    .up-snow-btn:active {
+        background-image: url(picx2/Temp-snow-plus-tap.png);
+    }
+    .down-snow-btn:active {
+        background-image: url(picx2/Temp-snow-minus-tap.png);
+    }
+
 }
