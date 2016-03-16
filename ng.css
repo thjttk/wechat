@@ -63,12 +63,12 @@ footer .row div.config {
 }
 
 footer .row div.Navi-config-page {
-    background-image: url(pic/Navi-control-white-solid.png);
+    background-image: url(pic/Navi-house-white-solid.png);
     background-repeat: no-repeat;
 }
 
 footer .row div.Navi-ac-page {
-    background-image: url(pic/Navi-house-white-solid.png);
+    background-image: url(pic/Navi-control-white-solid.png);
     background-repeat: no-repeat;
 }
 
