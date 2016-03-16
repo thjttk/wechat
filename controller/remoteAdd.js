@@ -9,14 +9,14 @@ function remoteAddCtrl($scope, equipmentService, $location) {
     $scope.add = function() {
         console.log($scope.location);
         if (!$scope.location || $scope.location.trim().length === 0) {
-            alert('need descript')
+            alert('need description')
             return;
         }
         equipmentService.create({
             type: $scope.type,
             location: $scope.location
         }, function() {
-            $location.path('/config')
+            $location.path('/equipmentlist')
         });
     }
 }

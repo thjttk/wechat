@@ -1,10 +1,10 @@
-<span class="pull-left">
-    <a href='#/equipmentlist'><img id="addbtn" src="picx2/Back-white.png" width="12" height="21"></a>
-  </span>
-<h1 id="lightControlHeader">Add Remote</h1>
+<a href='#/equipmentlist'><img id="addbtn" src="picx2/Back-white.png" width="12" height="21">
+    <span class="pull-left"></span>
+    <h1 id="lightControlHeader">Edit Remote</h1>
+</a>
 <div class="row underline-row">
     <div class="col-xs-3 labels">Type:</div>
-        <select name="equipment" ng-model="type" class="col-xs-3 pull-right">
+        <select name="equipment" ng-model="remote.type" class="col-xs-3 pull-right">
             <option value="AC">AC</option>
             <option value="light">light</option>
         </select>
@@ -16,5 +16,5 @@
 </div>
 <hr>
 <div class="row underline-row">
-    <button class="col-xs-8 col-xs-offset-2" id="remote-add-btn" ng-click="add()">Add</button>
+    <button class="col-xs-8 col-xs-offset-2" id="remote-add-btn" ng-click="delete()">Delete</button>
 </div>
