@@ -1,6 +1,7 @@
 body {
     padding-bottom: 50px;
     position: relative;
+    min-width: 380px;
 }
 
 body,
@@ -30,6 +31,17 @@ footer {
 
 .config-page {
     background-color: #ddd;
+}
+.config-page footer .row .temperature {
+    background-image: url(pic/Navi-house-grey.png);
+}
+
+.config-page footer .row .equipments {
+    background-image: url(pic/Navi-control-grey.png);
+}
+
+.config-page footer .row .statistics {
+    background-image: url(pic/Navi-chart-grey.png);
 }
 
 .footer .col-xs-3 {
@@ -402,6 +414,7 @@ p {
     background-repeat: no-repeat;
     background-position: 50% 20%;
     background-size: 25px 25px;
+    padding-top: 40px;
 }
 
 .acControlDisplay {
@@ -551,7 +564,7 @@ footer {
 }
 
 .add-remote {
-    background-image: url(pic/Deviceadd-darkgrey.png);
+    background-image: url(picx2/Deviceadd-white.png);
     background-repeat: no-repeat;
     background-size: 16px 16px;
     background-position: 26px;
@@ -581,7 +594,7 @@ col-xs-3.pull-right select {
 .remote-edit {
     width: 15px;
     height: 15px;
-    background-image: url(pic/Deviceedit-grey.png);
+    background-image: url(picx2/Edit-white.png);
     background-repeat: no-repeat;
     background-size: 15px 15px;
     margin-top: 20px;
@@ -602,6 +615,7 @@ col-xs-3.pull-right select {
     background-repeat: no-repeat;
     background-position: 50% 20%;
     background-size: 25px 25px;
+    padding-top: 40px;
 }
 .natureControlBtn {
     width: 70px;
@@ -615,5 +629,79 @@ col-xs-3.pull-right select {
     background-image: url(pic/Power-white.png);
     background-repeat: no-repeat;
     background-position: 50% 20%;
-    background-size: 25px 25px;
+    background-size: 35px 20px;
+    padding-top: 40px;
+}
+.fan-control-wrap {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto 10px;   
+}
+.fan-control-wrap>img {
+    background-size: 35px 35px;
+}
+
+#fan-control-up {
+    width: 200px;
+    height: 110px;
+    background-image: url(picx2/Temp-sun-big.png), url(picx2/Fancontrol-up.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50%;
+    margin: auto;
+    display: block;
+    background-size: 30px 30px, contain;
+}
+#fan-control-up:active {
+    background-image: url(picx2/Temp-sun-big.png), url(picx2/Fancontrol-up-tap.png);
+}
+#fan-control-down {
+    width: 200px;
+    height: 110px;
+    background-image: url(picx2/Humidity.png), url(picx2/Fancontrol-down.png); 
+    background-repeat: no-repeat;
+    background-size: 20px 30px, contain;
+    background-position: 50%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#fan-control-down:active {
+    background-image: url(picx2/Humidity.png), url(picx2/Fancontrol-down-tap.png); 
+}
+#fan-control-left {
+    width: 110px;
+    height: 200px;
+    background-image: url(picx2/Wind-direction.png), url(picx2/Fancontrol-left.png); 
+    background-repeat: no-repeat;
+    background-size: 40px 30px, contain;
+    background-position: 50%;
+    position: absolute;
+    top: 50%;
+    height: 200px;
+    transform: translateY(-50%);
+}
+#fan-control-left:active {
+    background-image: url(picx2/Wind-direction.png), url(picx2/Fancontrol-left-tap.png); 
+}
+#fan-control-right {
+    width: 110px;
+    background-image: url(picx2/Power-white.png), url(picx2/Fancontrol-right.png); 
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 30px 30px, contain;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#fan-control-right:active {
+    background-image: url(picx2/Power-white.png), url(picx2/Fancontrol-right-tap.png); 
+}
+
+#add-device {
+    margin-top: 30px;
 }

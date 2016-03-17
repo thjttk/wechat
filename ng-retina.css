@@ -189,7 +189,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     }
 
     .add-remote {
-        background-image: url(picx2/Deviceadd-darkgrey.png);
+        background-image: url(picx2/Deviceadd-white.png);
     }
     .equipmentDetailRow {
         background-image: url(picx2/Forward-white.png);
@@ -210,7 +210,23 @@ only screen and (min-device-pixel-ratio: 1.5) {
     }
 
     .fanSpeedControlBtn {
-        background-image: url();
+        background-image: url(picx2/Fan-white.png);
     }
+    .natureControlBtn {
+        background-image: url(picx2/Leaf-white.png);
+    }
+
+    .config-page footer .row .temperature {
+        background-image: url(picx2/Navi-house-grey.png);
+    }
+
+    .config-page footer .row .equipments {
+        background-image: url(picx2/Navi-control-grey.png);
+    }
+
+    .config-page footer .row .statistics {
+        background-image: url(picx2/Navi-chart-grey.png);
+    }
+
 
 }
