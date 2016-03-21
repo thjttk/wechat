@@ -9,7 +9,8 @@ function equipmentService($resource, API) {
         id: '@id'
     }, {
         'update': {
-            method: 'PUT'
+            method: 'POST',
+            url: API + 'control'
         },
     	'create': {
     		method: 'POST'

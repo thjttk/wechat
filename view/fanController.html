@@ -9,21 +9,21 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-4 col-xs-offset-1">
-            <button class="fanSpeedControlBtn">speed</button>
+            <button class="fanSpeedControlBtn" ng-click="update('wind_speed')">Speed</button>
         </div>
         <div class="col-xs-4">
-            <button class="natureControlBtn">natural</button>
+            <button class="natureControlBtn" ng-click="update('anion')">Anion</button>
         </div>
         <div class="col-xs-3">
-            <button class="acPowerControlbtn">power</button>
+            <button class="acPowerControlbtn" ng-click="update('switch')">Power</button>
         </div>
     </div>
     <div cdass="row">
         <div class="fan-control-wrap">
-            <div id="fan-control-up"></div>
-            <div id="fan-control-right" src=""></div>
-            <div id="fan-control-down" src="picx2/Fancontrol-down.png"></div>
-            <div id="fan-control-left" src=""></div>
+            <div id="fan-control-up" ng-click="update('warm_air')"></div>
+            <div id="fan-control-right" ng-click="update('switch')"></div>
+            <div id="fan-control-down" ng-click="update('humidification')"></div>
+            <div id="fan-control-left" ng-click="update('swing')"></div>
         </div>
     </div>
 </div>

@@ -705,3 +705,10 @@ col-xs-3.pull-right select {
 #add-device {
     margin-top: 30px;
 }
+
+.fanSpeedControlBtn {
+    background-image: url(picx2/Fan-white.png);
+}
+.natureControlBtn {
+    background-image: url(picx2/Leaf-white.png);
+}

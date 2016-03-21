@@ -5,10 +5,6 @@ humidityCtrl.$inject = ['$scope', 'sensorService', '$timeout']
 
 function humidityCtrl($scope, sensorService, $timeout) {
   $scope.global.curPage = 2.5;
-  sensorService.query(function(data) {
-    $scope.currentHumidity = data[0].latest_humidity;
-    console.log( $scope.currentHumidity );
-  })
 
   $scope.trend = 0; // 0:stable, 1: going up, -1 :down
   var originalHumidity = 0;
