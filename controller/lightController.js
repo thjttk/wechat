@@ -9,7 +9,7 @@ function lightControllerCtrl($scope, equipmentService, $route) {
   console.log($scope.equipment);
   $scope.power = function(delay) {
     $scope.equipment.function_key = "switch";
-    $scope.equipment.$update(function(data) {
+    $scope.equipment.$control(function(data) {
       console.log( data == $scope.equipment );
       if(data.retcode === "0") {
         $scope.equipment = equipmentService.get({id: $route.current.params.lightID})

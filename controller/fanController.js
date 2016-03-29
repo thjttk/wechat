@@ -12,7 +12,7 @@ function fanControllerCtrl($scope, equipmentService, $route) {
 
     $scope.update = function(type) {
     	$scope.equipment.function_key = type;
-    	$scope.equipment.$update(function(data) {
+    	$scope.equipment.$control(function(data) {
     		if(data.retcode !== "0") {
     			alert(data.reason)
     		}

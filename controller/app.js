@@ -2,7 +2,7 @@ angular.module('app', ['ngRoute', 'ngTouch', 'ngResource'])
   .controller('appCtrl', appCtrl)
   .config(route)
   .run(changeTitle)
-  .constant('API', 'http://139.196.202.91/isteward/');
+  .constant('API', 'http://139.196.202.91/istewardv3/');
 
 changeTitle.$inject = ['$rootScope'];
 function changeTitle($rootScope) {

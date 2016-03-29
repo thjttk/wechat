@@ -9,25 +9,25 @@ function remoteEditCtrl($scope, equipmentService, $location, $route) {
     if($route.current.params.id) {
         $scope.remote = equipmentService.get({id: $route.current.params.id});
     } else {
-        location.path('#/equipmentlist');
+        location.path('/equipmentlist');
     }
 
     $scope.delete = function() {
         if($scope.remote) {
             $scope.remote.$remove(function() {
-                $location.path('#/equipmentlist')
+                $location.path('/equipmentlist')
             });
         }
     }
 
     $scope.save = function() {
+        var remote = $scope.remote;
         if($scope.remote) {
-            $scope.remote.$save(function() {
-                debugger
-                if($scope.remote.type === 'ac') {
-                    $location.path('/acController/' + $scope.remote.id);
+            $scope.remote.$update(function() {
+                if(remote.type === 'ac') {
+                    $location.path('/fanController/' + remote.id);
                 }else {
-                    $location.path('/lightController/' + $scope.remote.id);
+                    $location.path('/lightController/' + remote.id);
                     
                 }
             })
